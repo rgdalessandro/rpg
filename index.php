@@ -27,9 +27,11 @@
 		$Names = array ('a' => 'Angela', 'b' => 'Bradley', 'c' => array ('Cade', 'Caleb')); 
 		print_r ($Names);
 
-		exec("sshpass -p hackathon ssh hackathon@192.168.1.146 'cd /opt/Raptor; sudo python3 raptor.py appliance 0 all'",$output,$return_var);
+		//exec("sshpass -p hackathon ssh hackathon@192.168.1.146 'cd /opt/Raptor; sudo python3 raptor.py appliance 0 all'",$output,$return_var);
 
-		print_r(array($output,$return_var)));
+		//print_r(array($output,$return_var)));
+
+		pasthru("uptime");
 	?>
 </body>
 </html>
